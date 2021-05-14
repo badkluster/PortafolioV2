@@ -1,9 +1,4 @@
-if ("serviceWorker" in navigator) {
-  navigator.serviceWorker
-    .register("/js/sw.js")
-    .then((reg) => console.log("Registro de SW exitoso", reg))
-    .catch((err) => console.warn("Error al tratar de registrar el sw", err));
-}
+
 // MENU RESPONSIVE
 var btnMenuOpen = document.getElementById("btnMenuOpen"),
   btnMenuClose = document.getElementById("btnMenuClose"),
