@@ -7,7 +7,7 @@ const CACHE_NAME = "v1_cache_Portafolio_Jorge_Dominguez",
     "lib/fontawesome/css/all.css",
     "https://unpkg.com/aos@2.3.1/dist/aos.css",
     "/css/estilos.css",
-    "./js/app.js",
+    "./pwa.js",
     "./img/logobanner2.webp",
     "./img/ms-icon-70x70.png",
   ];
