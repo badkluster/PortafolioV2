@@ -39,7 +39,7 @@ body {
   text-align: center;
   text-transform: uppercase;
   color: var(--color-primario);
-  margin-top: 10px;
+  padding: 20px;
 }
 
 .btn {
