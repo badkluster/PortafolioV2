@@ -39,6 +39,7 @@ body {
   text-align: center;
   text-transform: uppercase;
   color: var(--color-primario);
+  margin-top: 10px;
 }
 
 .btn {
@@ -135,7 +136,7 @@ header {
       rgba(106, 110, 112, 0.5) 0%,
       rgba(70, 75, 74, 0.5) 100%
     ),
-    url(../img/WhatsApp\ Image\ 2021-03-08\ at\ 18.16.23.jpeg);
+    url(../img/WhatsApp\ Image\ 2021-03-08\ at\ 18.16.23.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -307,7 +308,7 @@ header {
 }
 .imagen-central img {
   width: 100%;
-  height: 400px;
+  height: 100%;
   border-radius: 50%;
 }
 
