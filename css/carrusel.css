@@ -1,0 +1,295 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i");
+
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background: linear-gradient(90deg, #221e1f, #524d4a);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.centrado {
+  background-color: #0e0d0d;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  clip-path: circle(150% at 100% 0);
+  transition: all 2.5s ease-in-out;
+}
+
+.loader2 {
+  clip-path: circle(0% at 100% 0);
+}
+.title {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+}
+
+.title img {
+  width: 200px;
+  cursor: pointer;
+}
+span {
+  font-size: 30px;
+  padding: 10px;
+  margin-right: 20px;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+h1 {
+  color: #fff;
+  font-size: 50px;
+}
+span:hover,
+i:hover {
+  color: gold;
+}
+
+/* Slicebox Style */
+.sb-slider {
+  margin: 10px auto;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  list-style-type: none;
+  padding: 0;
+}
+
+.sb-slider li {
+  margin: 0;
+  padding: 0;
+  display: none;
+  overflow: hidden;
+}
+
+.sb-slider li > a {
+  outline: none;
+}
+
+.sb-slider li > a img {
+  border: none;
+}
+
+.sb-slider img {
+  max-width: 100%;
+  display: block;
+}
+
+.sb-description {
+  padding: 10px;
+  bottom: 10px;
+  left: 10px;
+  right: 10px;
+  z-index: 1000;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.6);
+  border-left: 4px solid #fff;
+  opacity: 0;
+  color: #fff;
+
+  -webkit-transition: all 300ms;
+  -moz-transition: all 300ms;
+  -o-transition: all 300ms;
+  -ms-transition: all 300ms;
+  transition: all 300ms;
+}
+
+.sb-slider li.sb-current .sb-description {
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+  filter: alpha(opacity=80);
+  opacity: 1;
+}
+
+.sb-slider li.sb-current .sb-description:hover {
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=99)";
+  filter: alpha(opacity=99);
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.sb-perspective {
+  position: relative;
+}
+
+.sb-perspective > div {
+  position: absolute;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.sb-side {
+  margin: 0;
+  display: block;
+  position: absolute;
+  -moz-backface-visibility: hidden;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+/* custom style */
+.container {
+  width: 100%;
+  max-width: 800px;
+  margin: auto;
+  position: relative;
+  height: 100vh;
+}
+
+.sb-description h3 {
+  font-size: 20px;
+}
+
+.sb-description h3 a {
+  color: #4a3c27;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.5);
+}
+
+.nav-arrows {
+  display: none;
+}
+
+.nav-arrows a {
+  width: 42px;
+  height: 42px;
+  background: #000 url(https://tympanus.net/Development/Slicebox/images/nav.png)
+    no-repeat top left;
+  background-size: cover;
+  opacity: 0.6;
+  position: absolute;
+  top: 45%;
+  left: 20px;
+  text-indent: -9000px;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: all 900ms;
+}
+
+.nav-arrows a:first-child {
+  left: auto;
+  right: 20px;
+  background-position: top right;
+}
+
+.nav-arrows a:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+@media screen and (max-width: 800px) {
+  .nav-arrows a {
+    width: 50px;
+    height: 50px;
+  }
+
+  .sb-description {
+    height: 30px;
+  }
+
+  .sb-description h3 {
+    margin: 3px;
+  }
+}
+
+.disabled {
+  cursor: not-allowed;
+  pointer-events: none;
+}
+/* FOOTER */
+footer {
+  display: flex;
+  margin-top: 40px;
+}
+
+.sociales-metodo {
+  width: 25%;
+  height: 100px;
+  background: #333;
+  color: #fff;
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+}
+
+.sociales-metodo i {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  font-size: 30px;
+  line-height: 100px;
+  transition: all 0.5s;
+}
+
+.sociales-metodo span {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  padding: 10px 0;
+  font-size: 12px;
+  background: var(--color-primario);
+  color: #fff;
+  letter-spacing: 1px;
+  font-weight: 700;
+  transform: translateY(60px);
+  transition: all 0.8s;
+}
+
+.sociales-metodo i:hover + span {
+  transform: translateY(0px);
+}
+
+.sociales-metodo i:hover {
+  transform: translateY(-20px);
+}
+
+@media screen and (max-width: 650px) {
+  /* FOOTER */
+  footer {
+    flex-wrap: wrap;
+    margin-top: 0px;
+  }
+  h1 {
+    font-size: 25px;
+    margin-top: 60px;
+  }
+
+  .sociales-metodo {
+    width: 50%;
+  }
+
+  .nav-arrows a {
+    position: absolute;
+    top: 120px;
+    width: 50px;
+  }
+
+  .container {
+    height: auto;
+  }
+}
