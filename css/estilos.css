@@ -166,12 +166,13 @@ header {
 
 .head p {
   font-family: "Anonymous Pro", monospace;
-  font-size: 1.5em;
+  font-size: 1.4em;
   color: #f8f8f8;
   letter-spacing: 0.1em;
 
   white-space: nowrap;
   margin-top: 1em;
+  margin-left: 6.5em;
 }
 
 .logo img {
