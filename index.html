@@ -340,8 +340,21 @@
                          var inputMensaje = document.getElementById("mensaje")
                          var alertSuccess = document.getElementById("alertSuccess")
                          var alertError = document.getElementById("alertError");
+                         
+                         document.getElementById('email').addEventListener('input', function() {
+                         campo = event.target;
+    
+        
+                          emailRegex = /^[-\w.%+]{1,64}@(?:[A-Z0-9-]{1,63}\.){1,125}[A-Z]{2,63}$/i;
+                          //Se muestra un texto a modo de ejemplo, luego va a ser un icono
+                          if (emailRegex.test(campo.value)) {
+                            console.log(campo.value)
+                          } else {
+                           console.log(campo.value)
+                           }
+                           });
 
-                         if (inputNombre.value == 0 || inputEmail.value == 0 || inputMensaje.value == 0) {
+                         if (inputNombre.value == 0 || inputEmail.value == 0 || inputMensaje.value == 0 || campo.value == false) {
 
                               alertError.classList.remove("hide");
                               alertError.classList.add("show");
