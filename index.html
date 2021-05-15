@@ -305,6 +305,22 @@
      <!--EFECTOS DE SCROOL CON AOS-->
      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
      <script> AOS.init();</script>
+     
+      <script src="js/typed.js"></script>
+     <script>
+          // Hero typed
+     if ($(".typed").length) {
+       var typed_strings = $(".typed").data("typed-items");
+       typed_strings = typed_strings.split(",");
+       new Typed(".typed", {
+       strings: typed_strings,
+       loop: true,
+       typeSpeed: 100,
+        backSpeed: 50,
+        backDelay: 2000,
+        });
+       }
+     </script>
 
      <!--TRABAJAMOS CON VUE PARA EMAIL-->
      <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.16/vue.min.js">
@@ -393,21 +409,7 @@
      <script src="js/main.js"></script>
      <script src="js/t.min.js"></script>
      <script src="https://cdn.jsdelivr.net/npm/baffle@0.3.6/dist/baffle.min.js"></script>
-     <script src="/js/typed.js"></script>
-     <script>
-          // Hero typed
-     if ($(".typed").length) {
-       var typed_strings = $(".typed").data("typed-items");
-       typed_strings = typed_strings.split(",");
-       new Typed(".typed", {
-       strings: typed_strings,
-       loop: true,
-       typeSpeed: 100,
-        backSpeed: 50,
-        backDelay: 2000,
-  });
-}
-     </script>
+    
 
 </body>
 
