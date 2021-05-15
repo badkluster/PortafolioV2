@@ -341,9 +341,14 @@
                          var inputMensaje = document.getElementById("mensaje")
                          var alertSuccess = document.getElementById("alertSuccess")
                          var alertError = document.getElementById("alertError");
+                         const emailRegex = /^(([^<>()\[\]\\.,:\s@"]+(\.[^<>()\[\]\\.,:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
 
-                         if (inputNombre.value == 0 || inputEmail.value == 0 || inputMensaje.value == 0) {
+                         if (inputNombre.value == 0 || inputEmail.value == 0 || inputMensaje.value == 0 || emailRegex.test(inputEmail.value) == false) {
 
+                              if(emailRegex.test(inputEmail.value) == false) {
+                                   alert("Email no valido.")
+                              }
+                              
                               alertError.classList.remove("hide");
                               alertError.classList.add("show");
 
