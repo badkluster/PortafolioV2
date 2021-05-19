@@ -171,11 +171,7 @@ header {
 }
 
 .head p {
-<<<<<<< Updated upstream
- font-family: "Anonymous Pro", monospace;
-=======
   font-family: "Anonymous Pro", monospace;
->>>>>>> Stashed changes
   font-size: 1.4em;
   color: #f8f8f8;
   letter-spacing: 0.1em;
@@ -183,13 +179,10 @@ header {
   white-space: nowrap;
   margin-top: 1em;
   margin-left: 6.5em;
-<<<<<<< Updated upstream
-=======
 }
 
 .head p span {
   color: #eb0046;
->>>>>>> Stashed changes
 }
 
 .logo img {
