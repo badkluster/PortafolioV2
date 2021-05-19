@@ -1,9 +1,4 @@
-if ("serviceWorker" in navigator) {
-  navigator.serviceWorker
-    .register("/js/sw.js")
-    .then((reg) => console.log("Registro de SW exitoso", reg))
-    .catch((err) => console.warn("Error al tratar de registrar el sw", err));
-}
+
 // MENU RESPONSIVE
 var btnMenuOpen = document.getElementById("btnMenuOpen"),
   btnMenuClose = document.getElementById("btnMenuClose"),
@@ -59,3 +54,24 @@ btnTop.addEventListener("click", function () {
 logo.addEventListener("click", function () {
   window.scrollTo(0, 0);
 });
+if ($(".typed").length) {
+
+  var typed_strings = $(".typed").data("typed-items");
+
+  typed_strings = typed_strings.split(",");
+
+  new Typed(".typed", {
+
+    strings: typed_strings,
+
+    loop: true,
+
+    typeSpeed: 100,
+
+    backSpeed: 50,
+
+    backDelay: 2000,
+
+  });
+
+}
