@@ -916,9 +916,6 @@ footer {
   font-size: 0.5em;  
 }
 
-.head p span {
-  font-size: 0.5em; 
-}
   /* MENU PRINCIPAL */
   .menu-principal {
     position: fixed;
@@ -1067,20 +1064,4 @@ footer {
 
 .fa-chevron-down:hover {
   color: #721c24;
-}
-
-.head p {
-  font-family: "Anonymous Pro", monospace;
-  font-size: 1.4em;
-  color: #f8f8f8;
-  letter-spacing: 0.1em;
-  font-weight: bold;
-  white-space: nowrap;
-  margin-top: 1em;
-  margin-left: 6.5em;
-}
-
-.head p span {
-  font-weight: bold;
-  color: #bd2332;
 }
