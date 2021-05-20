@@ -967,7 +967,8 @@ footer {
   }
 
   .head h1 {
-    font-size: 1.2em;
+    font-size: 1em;
+    margin-top:40px;
   }
   
   /* INGREDIENTES */
@@ -988,10 +989,7 @@ footer {
     width: 100%;
   }
 
-  .parrafo-personal h3 {
-    font-size: 1em;
-    text-align: center;
-  }
+
 
   /* CONTACTOS */
   #formulario {
@@ -1033,35 +1031,4 @@ footer {
     display: none;
   }
 
-  .btn-contact {
-  margin-top: 12em;
-  
-}
-
-.fa-chevron-down {
-  margin-top: 8rem;
-  font-weight: bold;
-  font-size: 2em;
-  color: var(--color-primario);
-  animation-name: upAnDown;
-  animation-duration: 1s;
-  animation-iteration-count: infinite;
-  transition: all 0.5s;
-}
-
-@keyframes upAnDown {
-  from,
-  to {
-    transform: translate(0, -5px);
-  }
-  50% {
-    transform: translate(0, 5px);
-  }
-  100% {
-    transform: translate(0, -5px);
-  }
-}
-
-.fa-chevron-down:hover {
-  color: #721c24;
 }
