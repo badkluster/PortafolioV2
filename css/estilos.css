@@ -868,11 +868,11 @@ footer {
 @media screen and (max-width: 650px) {
   
   .head p { 
-  font-size: 0.8em;  
+  font-size: 0.5em;  
 }
 
 .head p span {
-  font-size: 0.8em; 
+  font-size: 0.5em; 
 }
   /* MENU PRINCIPAL */
   .menu-principal {
@@ -927,10 +927,7 @@ footer {
   .head h1 {
     font-size: 1.2em;
   }
-  .head p {
-    font-size: 0.6em;
-  }
-
+  
   /* INGREDIENTES */
   .info-ingre .txt-ingre {
     display: none;
@@ -993,10 +990,10 @@ footer {
   #btn-top {
     display: none;
   }
-  .head p {
-    font-size: 0.8em;
-    margin-left: 2em;
-  }
+
+  .btn-contact {
+  margin-top: 12em;
+  
 }
 
 .fa-chevron-down {
