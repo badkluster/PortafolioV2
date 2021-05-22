@@ -315,10 +315,6 @@ header {
   flex-direction: column;
 }
 
-.servicios-titulos h2 {
-  padding-top: 20px;
-}
-
 .servicios-container {
   margin-top: 30px;
   display: grid;
@@ -478,10 +474,6 @@ header {
 .seccion-proyectos {
   background: var(--color-background);
   height: 100vh;
-}
-
-.servicios-titulos h1 {
-  padding-top: 20px;
 }
 
 .btn-proyect {
@@ -919,9 +911,10 @@ footer {
 /* ***************************** 650 px  *********************************************** */
 
 @media screen and (max-width: 650px) {
-  .head p {
-    font-size: 0.5em;
-  }
+  
+  .head p { 
+  font-size: 0.5em;  
+}
 
   /* MENU PRINCIPAL */
   .menu-principal {
@@ -930,11 +923,6 @@ footer {
     margin-top: 0;
     width: 100%;
     z-index: 50;
-    background-color: rgba(136, 136, 136, 0.5);
-  }
-
-  .fa-bars:before {
-    color: #bd2332;
   }
 
   .menu-principal i {
@@ -980,9 +968,9 @@ footer {
 
   .head h1 {
     font-size: 1em;
-    margin-top: 40px;
+    margin-top:40px;
   }
-
+  
   /* INGREDIENTES */
   .info-ingre .txt-ingre {
     display: none;
@@ -1000,6 +988,8 @@ footer {
   .parrafo-personal {
     width: 100%;
   }
+
+
 
   /* CONTACTOS */
   #formulario {
@@ -1040,4 +1030,5 @@ footer {
   #btn-top {
     display: none;
   }
+
 }
