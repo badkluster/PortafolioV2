@@ -39,6 +39,7 @@ body {
   text-align: center;
   text-transform: uppercase;
   color: var(--color-primario);
+  padding-top: 10px;
 }
 
 .btn {
@@ -313,6 +314,10 @@ header {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+
+#proyectos h1 {
+  padding-top: 20px;
 }
 
 .servicios-container {
@@ -713,6 +718,10 @@ header {
   padding: 15px 65px;
 }
 
+.titulo-contacto h2 {
+  padding: 0px;
+}
+
 /* ALERTAS */
 .alertas {
   display: flex;
@@ -906,15 +915,19 @@ footer {
   .btn-certificados:hover {
     width: 80%;
   }
+
+  footer {
+    flex-wrap: wrap;
+    margin-top: 0px;
+  }
 }
 
 /* ***************************** 650 px  *********************************************** */
 
 @media screen and (max-width: 650px) {
-  
-  .head p { 
-  font-size: 0.5em;  
-}
+  .head p {
+    font-size: 0.5em;
+  }
 
   /* MENU PRINCIPAL */
   .menu-principal {
@@ -923,6 +936,11 @@ footer {
     margin-top: 0;
     width: 100%;
     z-index: 50;
+    background-color: rgba(128, 128, 128, 0.5);
+  }
+
+  .fa-bars:before {
+    color: #490606;
   }
 
   .menu-principal i {
@@ -968,9 +986,9 @@ footer {
 
   .head h1 {
     font-size: 1em;
-    margin-top:40px;
+    margin-top: 40px;
   }
-  
+
   /* INGREDIENTES */
   .info-ingre .txt-ingre {
     display: none;
@@ -988,8 +1006,6 @@ footer {
   .parrafo-personal {
     width: 100%;
   }
-
-
 
   /* CONTACTOS */
   #formulario {
@@ -1030,5 +1046,4 @@ footer {
   #btn-top {
     display: none;
   }
-
 }
