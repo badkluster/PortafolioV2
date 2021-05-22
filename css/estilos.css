@@ -39,13 +39,6 @@ body {
   text-align: center;
   text-transform: uppercase;
   color: var(--color-primario);
-  padding: 20px;
-}
-
-.typed-cursor {
-  color: orange;
-  font-size: 1rem;
-  font-weight: bold;
 }
 
 .btn {
@@ -142,7 +135,7 @@ header {
       rgba(106, 110, 112, 0.5) 0%,
       rgba(70, 75, 74, 0.5) 100%
     ),
-    url(../img/WhatsApp\ Image\ 2021-03-08\ at\ 18.16.23.webp);
+    url(../img/WhatsApp\ Image\ 2021-03-08\ at\ 18.16.23.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -158,6 +151,7 @@ header {
   height: 5em;
   width: 38rem;
 }
+
 .head h1 {
   font-family: "Anonymous Pro", monospace;
   font-size: 2.5em;
@@ -175,15 +169,10 @@ header {
   font-size: 1.4em;
   color: #f8f8f8;
   letter-spacing: 0.1em;
-  font-weight: bold;
+
   white-space: nowrap;
   margin-top: 1em;
   margin-left: 6.5em;
-}
-
-.head p span {
-  font-weight: bold;
-  color: #bd2332;
 }
 
 .logo img {
@@ -247,6 +236,28 @@ header {
   color: var(--color-secundario);
 }
 
+/* ANIMACION DEL TEXTO */
+@keyframes typing {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* ANIMACION DEL CURSOR */
+
+@keyframes blink {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: orange;
+  }
+}
+
 .fa-chevron-down {
   margin-top: 8rem;
   font-weight: bold;
@@ -275,26 +286,20 @@ header {
   color: #721c24;
 }
 
-/* ANIMACION DEL TEXTO */
-@keyframes typing {
-  from {
-    width: 0%;
-  }
-  to {
-    width: 100%;
-  }
+.head p {
+  font-family: "Anonymous Pro", monospace;
+  font-size: 1.4em;
+  color: #f8f8f8;
+  letter-spacing: 0.1em;
+  font-weight: bold;
+  white-space: nowrap;
+  margin-top: 1em;
+  margin-left: 6.5em;
 }
 
-/* ANIMACION DEL CURSOR */
-
-@keyframes blink {
-  from,
-  to {
-    border-color: transparent;
-  }
-  50% {
-    border-color: orange;
-  }
+.head p span {
+  font-weight: bold;
+  color: #bd2332;
 }
 
 /******************* SECCION ABOUT ME ************************/
@@ -308,6 +313,10 @@ header {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+
+.servicios-titulos h2 {
+  padding-top: 20px;
 }
 
 .servicios-container {
@@ -348,7 +357,7 @@ header {
 }
 .imagen-central img {
   width: 100%;
-  height: 500px;
+  height: 400px;
   border-radius: 50%;
 }
 
@@ -380,22 +389,6 @@ header {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-}
-
-#about {
-  -webkit-transform: translateY(-20px) translateX(-50%);
-  transform: translateY(-20px) translateX(-50%);
-  position: absolute;
-  bottom: 50px;
-  font-size: 50px;
-  color: #868686;
-  display: block;
-  line-height: 60px;
-  text-align: center;
-  left: 50%;
-  margin-left: -15px;
-  -webkit-animation: scrollDown 3s ease infinite;
-  animation: scrollDown 3s ease infinite;
 }
 
 .items span {
@@ -485,6 +478,10 @@ header {
 .seccion-proyectos {
   background: var(--color-background);
   height: 100vh;
+}
+
+.servicios-titulos h1 {
+  padding-top: 20px;
 }
 
 .btn-proyect {
@@ -789,7 +786,7 @@ header {
 /* FOOTER */
 footer {
   display: flex;
-  margin-top: 0px;
+  margin-top: -50px;
 }
 
 .sociales-metodo {
@@ -922,6 +919,10 @@ footer {
 /* ***************************** 650 px  *********************************************** */
 
 @media screen and (max-width: 650px) {
+  .head p {
+    font-size: 0.5em;
+  }
+
   /* MENU PRINCIPAL */
   .menu-principal {
     position: fixed;
@@ -930,6 +931,10 @@ footer {
     width: 100%;
     z-index: 50;
     background-color: rgba(136, 136, 136, 0.5);
+  }
+
+  .fa-bars:before {
+    color: #bd2332;
   }
 
   .menu-principal i {
@@ -946,7 +951,7 @@ footer {
     right: 0;
     top: 0;
     z-index: 1000;
-    background: rgb(168, 78, 78);
+    background: #333;
     transition: all 1s;
     transform: translateX(100%);
   }
@@ -954,10 +959,6 @@ footer {
   .menu-bar.active {
     /*CREAR CLASE .ACTIVE PARA CUANDO SE LA PONGA APAREZCA EN PANTALLA POR EL TRASLATE X)*/
     transform: translateX(0%);
-  }
-
-  .fa-bars:before {
-    color: #9e2c37;
   }
 
   .menu-bar i {
@@ -978,12 +979,65 @@ footer {
   }
 
   .head h1 {
-    font-size: 1.2em;
+    font-size: 1em;
+    margin-top: 40px;
   }
-  .head p {
-    font-size: 0.8em;
-    margin-left: 2rem;
-2em;
+
+  /* INGREDIENTES */
+  .info-ingre .txt-ingre {
+    display: none;
   }
-  .head p {
-    font-size: 0.6em;
+
+  .agregar-imagen {
+    width: 95%;
+    height: 50%;
+  }
+
+  .img-galery {
+    width: 95%;
+  }
+
+  .parrafo-personal {
+    width: 100%;
+  }
+
+  /* CONTACTOS */
+  #formulario {
+    width: 100%;
+  }
+  #contacto {
+    height: auto;
+  }
+
+  .two-fiels {
+    flex-direction: column;
+  }
+
+  .inputConIcon {
+    width: 100%;
+  }
+
+  /* ALERTAS */
+  .alert {
+    width: 100%;
+  }
+
+  .alert.show {
+    transform: translateY(150%);
+  }
+
+  /* FOOTER */
+  footer {
+    flex-wrap: wrap;
+    margin-top: 0px;
+  }
+
+  .sociales-metodo {
+    width: 50%;
+  }
+
+  /* BOTON DE IR ARRIBA */
+  #btn-top {
+    display: none;
+  }
+}
