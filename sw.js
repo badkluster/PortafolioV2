@@ -9,7 +9,7 @@ const CACHE_NAME = "v1_cache_Portafolio_Jorge_Dominguez",
     "/css/estilos.css",
     "./pwa.js",
     "./img/logobanner2.webp",
-    "./img/ms-icon-70x70.png",
+    "./img/ms-icon-192x192.png",
   ];
 
 //durante la fase de instalación, generalmente se almacena en caché los activos estáticos
